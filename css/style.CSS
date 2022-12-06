@@ -1,6 +1,18 @@
 #page {
-  background-image: url(https://cdn.discordapp.com/attachments/688236743954399301/981370850043379772/aberrant3.png);
+  /* background-image: url(https://cdn.discordapp.com/attachments/688236743954399301/981370850043379772/aberrant3.png); */
   height: 100%;
+  /* background-color: rgb(20, 20, 20); */
+  /* background-image: linear-gradient(rgb(32, 50, 68), rgb(40, 42, 81), rgb(57, 35, 74), rgb(60, 37, 82), rgb(45, 27, 57), rgb(23, 14, 30)); */
+  overflow: hidden;
+  /* background-image: url(https://github.com/astrosteiner/astrosteiner.github.io/blob/main/photo/me.png?raw=true); */
+}
+
+.main {
+  text-align: center;
+}
+
+body {
+  font-size: 20px;
 }
 
 a {
@@ -8,6 +20,16 @@ a {
   font-family: 'OddBallzRegular';
   font-weight: normal;
   font-style: normal;
+}
+
+h1 {
+  margin-top: 20px;
+  font-family: 'OddBallzRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  color: aliceblue;
+  font-size: 25px;
 }
 
 p {
@@ -26,15 +48,6 @@ p {
   max-width: 700px;
 }
 
-.container2D, .container-fluid {
-  margin: auto;
-  background-color: #0449aa36;
-  margin-bottom: 200px;
-  padding: 50px;
-  max-width: 1200px;
-  
-}
-
 .socials {
   text-align: center;
   background-color: #ff000000;
@@ -48,16 +61,19 @@ p {
 }
 
 
-body {
-    font-size: 20px;
+#custom-nav{  
+  background-color: rgba(26, 19, 40, 0.747);
+  opacity: 1;
+  
 }
 
-#custom-nav{  
-  background-color: rgba(159, 133, 225, 0.5);
-  opacity: 1;
-}
 .navbar-nav{
   text-align: center;
+}
+
+#navbarSupportedContent {
+  justify-content: center;
+  
 }
 
 
@@ -86,7 +102,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #5b5b5b8f;
+  background-color: #5b5b5b3b;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -100,12 +116,10 @@ body {
   
 }
 
-.dropdown-content a:hover {background-color: rgb(56, 56, 56);}
+.dropdown-content a:hover {background-color: rgba(56, 56, 56, 0.503);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #ffffff5b;}
   
-.main {
-  text-align: center;
-}
+
