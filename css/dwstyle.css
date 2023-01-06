@@ -1,0 +1,472 @@
+body {
+    background: rgb(1,35,54);
+    background: radial-gradient(circle, rgb(5, 46, 70) 60%, rgb(10, 100, 70) 100%);
+    margin: 0px;
+    min-height: 100vh;
+    min-width:  100vw;
+    /*transform: scale(.75);*/
+  }
+  
+  .header {
+    background-color: #FF0000;
+    text-align: center;
+  
+  }
+
+  .text {
+    padding: 0px;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    text-align: center;
+    color: #273e5c;
+  }
+
+  .text2 {
+    padding: 0px;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    text-align: center;
+    color:  rgb(5, 46, 70);
+  }
+
+  .title {
+    text-align: center;
+    padding: 5px;
+    font-family: 'Work Sans';
+    font-size: 30px;
+    color: #ebe3bf;
+  }
+  
+  .title-row {
+    margin-top: 42px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: #097e86;
+  }
+
+  .description-row {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 21px;
+    height: 100px;
+    width: 800px;
+    overflow: auto;
+    background-color:rgb(76, 205, 50);
+    padding: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+  .description-text {
+    padding: 0px;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color: #010165;
+    text-align: center;
+  
+  }
+
+  .playground {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+  
+    
+  }
+
+  .column {
+    position: fixed;
+    top: 26px;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  .window {
+    cursor: default;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle; 
+    background-image: url(https://cdn.discordapp.com/attachments/690243152958849061/825552595014909962/finalplz.gif);
+  }
+
+  .window2 {
+    opacity: 1;
+    transition: opacity 1s;
+    cursor: default;
+    width: 960px;
+    height: 540px;
+    padding: 10px;
+    object-fit: cover;
+    margin-bottom: 0px;
+    vertical-align: middle; 
+    background-image: url('https://cdn.discordapp.com/attachments/764173515003527178/915854787034112030/scicommfinalenvironment1.png');
+    background-size: 980px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+    background-color: #8ff5df;
+  }
+  .window2.fade2 {
+    opacity: 1;
+  }
+
+  .window3 {
+    opacity: 1;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+    transition: opacity 1s;
+    cursor: default; 
+    width: 960px;
+    height: 540px;
+    padding: 10px;
+    margin-bottom: 0px;
+    vertical-align: middle; 
+    background-image: url('https://cdn.discordapp.com/attachments/764173515003527178/915854740515065906/scicommfinalenvironment2.png');
+    background-size: 980px;    
+  }
+
+  .window3.fade {
+    opacity: 1;
+  }
+
+  .clicker {
+    cursor: pointer;
+    width: 350px;
+    height: 80px;
+    float: left;
+    position: relative;
+    top: 310px;
+    left: 600px;
+    opacity: 0;
+    background-color: #ff0000;
+  }
+
+  .clicker2 {
+    cursor: pointer;
+    width: 900px;
+    height: 100px;
+    float: left;
+    position: relative;
+    top: 360px;
+    left: 50px;
+    opacity: 0;
+    background-color: #ff8800;
+  }
+
+  .clicker3 {
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    float: left;
+    position: relative;
+    top: 120px;
+    left: 250px;
+    opacity: 0;
+    background-color: #e6ff07;
+  }
+
+  .clicker4 {
+    cursor: pointer;
+    width: 300px;
+    height: 150px;
+    float: left;
+    position: relative;
+    top: -30px;
+    left: 450px;
+    opacity: 0;
+    background-color: #07ff3d;
+  }
+
+  .clicker5 {
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    float: left;
+    position: relative;
+    top: 100px;
+    left: -20px;
+    opacity: 0;
+    background-color: #0772ff;
+  }
+
+  .clicker6 {
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    float: left;
+    position: relative;
+    top: 210px;
+    left: -50px;
+    opacity: 0;
+    background-color: #5107ff;
+  }
+
+  .clicker7 {
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    float: left;
+    position: relative;
+    top: -70px;
+    left: -350px;
+    opacity: 0;
+    background-color: #ff07ea;
+  }
+
+  .clicker8 {
+    cursor: pointer;
+    width: 230px;
+    height: 400px;
+    float: left;
+    position: relative;
+    top: -200px;
+    left: -500px;
+    opacity: 0;
+    background-color: #ffffff;
+  }
+
+  .bubble {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+  .bubble2 {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+  .bubble3 {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);  
+  }
+
+  .bubble4 {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);  
+  }
+
+  .bubble5 {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+  .bubble6 {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+  .bubble7 {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+  .bubble8 {
+    position: relative;
+    top: 50px;
+    left: 400px;
+    overflow: auto;
+    padding: 10px;
+    cursor: pointer;
+    width: 300px;
+    height: 100px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    background-color: #ececbf;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+
+  .slidecontainer {
+    transform: scale(120%);
+    width: 80%;
+    margin-top: 10px; 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider { 
+    -webkit-appearance: none;
+    appearance: none;
+    width: 500px;
+    height: 100%;
+    background: no-repeat center/100% url('https://cdn.discordapp.com/attachments/764173515003527178/909983031606018078/gradientscaledraft.png');
+    outline: none;
+    
+  }
+
+  .slider::-webkit-slider-thumb:hover {
+    opacity: 1; 
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 100px; 
+    background: #080050; 
+    cursor: pointer; 
+    opacity: 0.7; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+
+ .bottomm {
+   display: flex;
+   margin-top: 50px;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 0px;
+   margin-top: -20px;
+   margin-bottom: 50px;
+ }
+
+ .bottom-text {
+    font-weight: bold;
+    position: relative;
+    top: 80px;
+    left: -290px;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    color: #ebe3bf;
+
+ }
+
+ .bottom-text2 {
+  font-weight: bold;
+  position: relative;
+  top: -100px;
+  left: 290px;
+  padding: 0px;
+  font-family: 'Work Sans';
+  font-size: 18px;
+  color: #ebe3bf;
+
+}
+
+
+  .restart-row {
+    display: inline-block;
+    font-weight: bold;
+    width: 200px;
+    height: 20px;
+    font-family: 'Work Sans';
+    color: #daeb7d;
+    padding-top: 18px;
+    padding-bottom: 13px;
+    font-size: 18px;
+    text-align: center;
+    color: Sans’;
+    background-color: #010165;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .pdf {
+    display: inline-block;
+    font-weight: bold;
+    width: 230px;
+    height: 20px;
+    font-family: 'Work Sans';
+    background-color:rgb(76, 205, 50);
+    padding-top: 0px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #010165;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6); 
+  }
+
+  
+  
