@@ -20,6 +20,11 @@ a {
   font-family: 'OddBallzRegular';
   font-weight: normal;
   font-style: normal;
+  color: rgb(224, 237, 249);
+}
+
+a:hover {
+  color: rgb(30, 30, 30);
 }
 
 h1 {
@@ -28,7 +33,7 @@ h1 {
   font-weight: normal;
   font-style: normal;
   text-align: center;
-  color: aliceblue;
+  color: rgb(211, 225, 236);
   font-size: 25px;
 }
 
@@ -36,14 +41,19 @@ p {
   font-family: 'OddBallzRegular';
   font-weight: normal;
   font-style: normal;
-  color: aliceblue;
+  color: rgb(205, 220, 234);
+}
+
+.store {
+  width: 200px;
+  text-align: right;
 }
 
 .container {
   text-align: center;
-  background-color: #0449aa36;
-  margin-top: 70px;
-  margin-bottom: 200px;
+  background-color: #0449aa00;
+  margin-top: 50px;
+  margin-bottom: 100px;
   padding: 5px;
   max-width: 700px;
 }
@@ -62,7 +72,7 @@ p {
 
 
 #custom-nav{  
-  background-color: rgba(26, 19, 40, 0.747);
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 255, 255, 0.232), rgba(255,0,0,0));;
   opacity: 1;
   
 }
@@ -76,16 +86,16 @@ p {
   
 }
 
-
 .navbar-nav .nav-item .nav-link {
-  color: rgb(255, 255, 255);
+  color: rgb(233, 244, 253);
   text-align: center;
 }
 
+
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04aa6d00;
-  color: white;
+  background-color: #00ffa200;
+  color:  rgba(233, 244, 253, 0.775);
   padding: 7px;
   font-size: 20px;
   border: none;
@@ -102,24 +112,30 @@ p {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #5b5b5b3b;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(163, 191, 225, 0.807);
+  /* border-radius: ; */
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: rgb(255, 255, 255);
+  color: rgb(233, 244, 253);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   
 }
 
-.dropdown-content a:hover {background-color: rgba(56, 56, 56, 0.503);}
+.dropdown-content a:hover {background-color: rgba(59, 72, 80, 0.503);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #ffffff5b;}
-  
+.dropdown:hover .dropbtn {background-color: #c5d4df5b;}
+
+#mydiv {
+  position: absolute;
+}
 

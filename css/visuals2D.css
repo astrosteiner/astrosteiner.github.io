@@ -1,7 +1,7 @@
-.portraits {
+.portraits, .covers {
   height: 550px;
-  margin: 0;
-  margin-bottom: -50px;
+  margin-top: 20;
+  margin-bottom: -80px;
   display: grid;
   grid-template-rows: 500px 100px;
   grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 1fr;
@@ -39,14 +39,7 @@
     translateX(calc(-300px * var(--r)));
   z-index: calc((var(--position) - var(--abs)));
   opacity: calc(1 / (2 * var(--abs)));
-  cursor: pointer;
-}
-
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* cursor: pointer; */
 }
 
 input[type=radio] {
@@ -195,7 +188,77 @@ input:nth-of-type(12):checked ~ .carousel {
   --position: 12;
 }
 
+.arrows {
+  display: contents;
+  justify-content: center;
+}
 
+.arrow {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.back-arrow {
+  place-self: center;
+  margin-left: -365px;
+  margin-bottom: 90px;
+  color: rgb(224, 237, 249);
+  transform: rotate(180deg);
+}
+
+.forward-arrow {
+  /* grid-area: slider; */
+  place-self: center;
+  margin-left: 400px;
+  margin-bottom: 100px;
+  color: rgb(224, 237, 249);
+}
+
+.arrow:hover {
+  color: black;
+}
+
+span {
+  font-size:30px;
+  width: 40px;
+}
+
+#i1:checked + .arrows .arrow, 
+#i2:checked + .arrows .arrow,
+#i3:checked + .arrows .arrow,
+#i4:checked + .arrows .arrow,
+#i5:checked + .arrows .arrow,
+#i6:checked + .arrows .arrow,
+#i7:checked + .arrows .arrow,
+#i8:checked + .arrows .arrow,
+#i9:checked + .arrows .arrow,
+#i10:checked + .arrows .arrow,
+#i11:checked + .arrows .arrow,
+#i12:checked + .arrows .arrow {
+  pointer-events: initial;
+  opacity: 1;
+  z-index: 2;
+}
+
+#ii1:checked + .arrows .arrow, 
+#ii2:checked + .arrows .arrow,
+#ii3:checked + .arrows .arrow,
+#ii4:checked + .arrows .arrow,
+#ii5:checked + .arrows .arrow,
+#ii6:checked + .arrows .arrow,
+#ii7:checked + .arrows .arrow,
+#ii8:checked + .arrows .arrow,
+#ii9:checked + .arrows .arrow,
+#ii10:checked + .arrows .arrow,
+#ii11:checked + .arrows .arrow,
+#ii12:checked + .arrows .arrow {
+  pointer-events: initial;
+  opacity: 1;
+  z-index: 2;
+}
 
 
 .container2D, .container-fluid {
@@ -319,3 +382,37 @@ input:nth-of-type(12):checked ~ .carousel {
   .modal-close:focus {
     opacity: .5;
   }
+
+  .card {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+  }
+  
+  .slider-container {
+  /* display: inline-block; */
+  position: absolute;
+  height: 400px;
+  width: 1000px;
+  margin-top: 300px;
+  /* margin-bottom: -320px; */
+  /* top: 500%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* overflow: hidden; */
+  }
+  
+  .inner-slider {
+  /* margin-top: 200px; */
+  position: absolute;
+  width: 400%;
+  display: flex;
+  gap: 10px;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  }
+
+
+
+  
