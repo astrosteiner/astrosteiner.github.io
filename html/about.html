@@ -13,38 +13,40 @@
   <body>
     <div id="page">
         <!-- Navbar Component -->
-        <nav id="custom-nav" class="navbar navbar-light navbar-expand-sm sticky-top flex-md-nowrap transparent p-" >
+        <nav id="custom-nav" class="navbar navbar-dark navbar-expand-sm sticky-top flex-md-nowrap transparent p-" >
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">
+              <!-- <img height="60px" src="https://github.com/astrosteiner/astrosteiner.github.io/blob/main/images/webkin.png?raw=true"> -->
+            </span>
           </button>
   
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav" id="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="../index.HTML">HOME</a>
-              </li>
-              <!-- <li class="nav-item"> -->
-                <!-- <a class="nav-link" href="#">writtens</a> -->
-              <!-- </li> -->
               <div class="dropdown">
                 <button class="dropbtn">visuals</button>
                 <div class="dropdown-content">
-                  <a href="visuals2D.html">2D <span class="sr-only">(current)</span></a>
-                  <!-- <a href="#">3D</a> -->
-                  <!-- <a href="#">video</a> -->
+                  <a href="visuals2D.html">2D</a>
+                  <!-- <a href="#">3D</a>
+                  <a href="#">video</a> -->
                   <a href="photography.html">photography</a>
                   <!-- <a href="#">jewelry</a> -->
                 </div>
               </div>
-              <div class="dropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">HOME</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">writtens</a>
+              </li> -->
+              <!-- <div class="dropdown">
                 <button class="dropbtn">sounds</button>
                 <div class="dropdown-content">
                   <a href="#">podcasts</a>
                 </div>
-              </div>
+              </div> -->
               <li class="nav-item">
-                <a class="nav-link" href="about.html">about</a>
+                <a class="nav-link" href="about.html">about<span class="sr-only">(current)</span></a>
               </li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -55,19 +57,20 @@
         <div class="container">
             <p>hi, i'm jace ! </p>
             <p>i'm an artist/person based in bk</p>
-            <p>this website is hopefully going to be a big dump of my various works</p>
-            <p>always feel free to reach out with questions, queries, or notes on making my pages more accessible!</p>
+            <p>i specialize in illustrations for portraiture and science communication</p>
+            <p>i coded this website from scratch so please let me know if i can make my pages more accessible!</p>
+            <p>for commission work, email me @ <a href = "mailto: jacengsteiner@gmail.com">jacengsteiner@gmail.com</a></p>
             <div class="socials">
                 <p>my socials:</p>
-                <a href="https://www.instagram.com/jacejardware/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/opiartsy/" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.discordapp.com/attachments/688236743954399301/981383629001338900/insta.png">
                 </a>
                 <a href="https://twitter.com/opiartsy" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.discordapp.com/attachments/688236743954399301/981383628728696842/bird_app.png">
                 </a>
-                <a href="https://open.spotify.com/user/opiartsy?si=e79984fb48164c5b" target="_blank" rel="noopener noreferrer">
+                <!-- <a href="https://open.spotify.com/user/opiartsy?si=e79984fb48164c5b" target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.discordapp.com/attachments/688236743954399301/981383628456071188/spoofy.png">
-                </a>
+                </a> -->
                 <a href="https://www.linkedin.com/in/jace-steiner-230892174/" target="_blank" rel="noopener noreferrer">
                   <img src="https://cdn.discordapp.com/attachments/688236743954399301/995847187458183239/linkedinpixel.png">
               </a>
@@ -75,7 +78,9 @@
         </div>
 
         <style>
-          #page {background-image: linear-gradient(rgb(32, 50, 68), rgb(40, 42, 81), rgb(57, 35, 74), rgb(60, 37, 82), rgb(45, 27, 57), rgb(23, 14, 30));}
+          #page {background-image: linear-gradient(rgb(2, 16, 30), rgb(8, 29, 59), rgb(18, 47, 93), rgb(27, 71, 128), rgb(45, 96, 167), rgb(255, 174, 209), rgb(255, 197, 82));}
+          /* #page {background-color: #000000;} */
+          .pixel {background-color: rgb(140, 26, 201);float: left;}
         </style>
         
       </div><!--/.page-->
@@ -86,5 +91,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
