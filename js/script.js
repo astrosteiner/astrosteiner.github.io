@@ -1,53 +1,53 @@
-let sliderContainer = document.querySelector(".portraits");
-let innerSlider = document.querySelector(".carousel");
+document.getElementById("span").innerHTML = "<img src='https://github.com/astrosteiner/astrosteiner.github.io/blob/main/images/nextbutton.png?raw=true'>";
 
-let pressed = false;
-let startX;
-let x;
+//////////////
 
-sliderContainer.addEventListener("mousedown", (e) => {
-    pressed = true;
-    startX = e.offsetX - innerSlider.offsetLeft;
-    sliderContainer.style.cursor = "grabbing";
-});
+var img = document.createElement('img');
 
-sliderContainer.addEventListener("mouseenter", () => {
-    sliderContainer.style.cursor = "grab";
-});
+img.src = "https://github.com/astrosteiner/astrosteiner.github.io/blob/main/images/nextbutton.png?raw=true"; 
 
-sliderContainer.addEventListener("mouseleave", () => {
-    sliderContainer.style.cursor = "default";
-});
+document.getElementById('span').appendChild(img);
 
-sliderContainer.addEventListener("mouseup", () => {
-    sliderContainer.style.cursor = "grab";
-    pressed = false;
-});
+// Make the DIV element draggable:
+dragElement(document.getElementById("xp"));
 
-window.addEventListener("mouseup", () => {
-    // pressed = false;
-});
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
 
-sliderContainer.addEventListener("mousemove", (e) => {
-    if (!pressed) return;
+  function dragMouseDown(e) {
+    e = e || window.event;
     e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
 
-    x = e.offsetX;
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
 
-    innerSlider.style.left = `${x - startX}px`;
-
-    checkBoundary();
-});
-
-const checkBoundary = () => {
-    let outer = sliderContainer.getBoundingClientRect();
-    let inner = innerSlider.getBoundingClientRect();
-
-    if (parseInt(innerSlider.style.left) > 0) {
-        innerSlider.style.left = "0px";
-    }
-
-    if (inner.right < outer.right) {
-        innerSlider.style.left = `-${inner.width - outer.width}px`;
-    }
-};
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
