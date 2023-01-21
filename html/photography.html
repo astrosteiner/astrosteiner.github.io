@@ -14,42 +14,42 @@
   <body>
     <div id="page">
         <!-- Navbar Component -->
-        <nav id="custom-nav" class="navbar navbar-light navbar-expand-sm sticky-top flex-md-nowrap transparent p-" >
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav" id="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="../index.HTML">HOME</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#">writtens</a>
-              </li> -->
-              <div class="dropdown">
-                <button class="dropbtn">visuals</button>
-                <div class="dropdown-content">
-                  <a href="visuals2D.html">2D</a>
-                  <!-- <a href="#">3D</a>
-                  <a href="#">video</a> -->
-                  <a href="photography.html">photography <span class="sr-only">(current)</span> </a>
-                  <!-- <a href="#">jewelry</a> -->
+        <nav id="custom-nav" class="navbar navbar-dark navbar-expand-sm sticky-top flex-md-nowrap transparent p-" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav" id="navbar-nav">
+                <div class="dropdown">
+                  <button class="dropbtn">visuals</button>
+                  <li class="dropdown-content">
+                    <a href="visuals2D.html">2D</a>
+                    <!-- <a href="#">3D</a>
+                    <a href="#">video</a> -->
+                    <a href="photography.html">photography<span class="sr-only">(current)</span></a>
+                    <!-- <a href="#">jewelry</a> -->
+                    </li>
                 </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn">sounds</button>
-                <div class="dropdown-content">
-                  <a href="#">podcasts</a>
-                </div>
-              </div>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">about</a>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </nav>  
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">HOME </a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">writtens</a>
+                </li> -->
+                <!-- <div class="dropdown">
+                  <button class="dropbtn">sounds</button>
+                  <div class="dropdown-content">
+                    <a href="#">podcasts</a>
+                  </div>
+                </div> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">about</a>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </nav>  
 
 <!------------------------------------------------------------------------------------------------>
 
@@ -81,23 +81,8 @@
           </div>   
         </div>
 
-        <svg viewBox="0 0 1200 1200" xmlns='http://www.w3.org/2000/svg'>
-
-        <filter id='noiseFilter'>
-            <feTurbulence 
-            type='fractalNoise' 
-            baseFrequency='0.65' 
-            numOctaves='3' 
-            stitchTiles='stitch' />
-        </filter>
-
-        <rect
-            filter='url(#noiseFilter)' />
-        </svg>
-
         <style>
             #page {background-color: black;}
-            svg {width: 100%;height: 100%;}
           </style>
 
     </div><!--/.page-->
