@@ -28,6 +28,17 @@
 /*   pointer-events: none; */
 }
 
+h1 {
+  display: inline-block;
+}
+
+.artlinks {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+
 .item {
   position: absolute;
   width: 400px;
