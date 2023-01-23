@@ -49,7 +49,7 @@ p {
   font-family: 'OddBallzRegular';
   font-weight: normal;
   font-style: normal;
-  color: rgb(205, 220, 234);
+  color: rgb(211, 225, 236);
 }
 
 .store {
@@ -97,6 +97,7 @@ p {
 .navbar-nav .nav-item .nav-link {
   color: rgb(233, 244, 253);
   text-align: center;
+  display: inline-block;
 }
 
 
